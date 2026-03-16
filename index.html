@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujal Kate | Web & App Developer</title>
+    <meta name="description"
+        content="Portfolio of Sujal Kate, an aspiring Web & Application Developer specializing in HTML, CSS, JavaScript, Python, Next.js, and Flutter.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    <!-- Dot Grid Background -->
+    <div class="dot-grid"></div>
+
+    <!-- Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">Sujal<span>.dev</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
+                <li><a href="#contact" class="btn-primary nav-contact" id="nav-contact-btn">Contact Me</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <span class="close-menu" id="close-menu"><i class="fas fa-times"></i></span>
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="greeting">👋 Hello, I'm</p>
+                <h1>Sujal Kate</h1>
+                <h2 class="typing-wrapper">
+                    <span class="static-role">I'm a </span>
+                    <span class="typed-text" id="typed-text"></span><span class="cursor-blink">|</span>
+                </h2>
+                <p class="tagline">Building modern web and mobile experiences with passion and precision.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Hire Me</a>
+                    <a href="#" class="btn-resume" id="download-resume" download>
+                        <i class="fas fa-download"></i> Resume
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Itachi210-cmd" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:katesujal36@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Hero Avatar -->
+            <div class="hero-avatar">
+                <div class="avatar-ring">
+                    <div class="avatar-inner">
+                        <img src="photo.jpeg" alt="Sujal Kate" class="avatar-photo"
+                            onerror="this.style.display='none'; document.querySelector('.avatar-initials').style.display='flex';">
+                        <span class="avatar-initials" style="display:none;">SK</span>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fab fa-flutter"></i> Flutter
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fab fa-react"></i> Next.js
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fab fa-python"></i> Python
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content animate-on-scroll">
+                <p>
+                    I am a passionate and motivated student fresher looking for internship and entry-level job
+                    opportunities in the tech industry.
+                    With a strong foundation in <span class="highlight">Web & Application Development</span>, I enjoy
+                    turning code into functional, user-friendly digital solutions.
+                </p>
+                <p>
+                    My journey involves continuous learning and building real-world projects. From responsive web
+                    designs to cross-platform mobile apps, I strive to write clean, efficient code. I am eager to join a
+                    dynamic team where I can contribute, learn from experienced professionals, and grow as a developer.
+                </p>
+                <div class="education-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p><strong>BSc Computer Science</strong></p>
+                    <p>Shankar Narayan College</p>
+                    <p class="year">3rd Year (Pursuing)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label">
+                                <span><i class="fab fa-html5"></i> HTML / CSS</span>
+                                <span class="skill-pct">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label">
+                                <span><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="skill-pct">75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label">
+                                <span><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-pct">70%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label">
+                                <span><i class="fab fa-react"></i> Next.js</span>
+                                <span class="skill-pct">65%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label">
+                                <span><i class="fas fa-mobile-alt"></i> Flutter / Dart</span>
+                                <span class="skill-pct">60%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> REST APIs</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQLite</span>
+                        <span class="skill-tag"><i class="fas fa-cube"></i> Prisma ORM</span>
+                        <span class="skill-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+                        <span class="skill-tag"><i class="fas fa-infinity"></i> DevOps</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-top">
+                        <div class="project-header">
+                            <h3>SocietyEase</h3>
+                            <span class="project-type mobile-type">Mobile App</span>
+                        </div>
+                        <p class="project-desc">
+                            A cross-platform society management app designed to simplify communication and daily
+                            operations within residential societies.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Cross-platform (Android / iOS)</li>
+                                <li><i class="fas fa-check"></i> Society notices & announcements</li>
+                                <li><i class="fas fa-check"></i> Event updates for residents</li>
+                                <li><i class="fas fa-check"></i> Clean, responsive UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card-bottom">
+                        <div class="tech-stack">
+                            <span class="tech-badge flutter">Flutter</span>
+                            <span class="tech-badge dart">Dart</span>
+                            <span class="tech-badge material">Material Design</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link-btn no-repo-badge">
+                                <i class="fas fa-lock"></i> Private / No Repo
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-top">
+                        <div class="project-header">
+                            <h3>HomeConnect AI</h3>
+                            <span class="project-type web-type">Web App</span>
+                        </div>
+                        <p class="project-desc">
+                            A full-stack real estate ecosystem bridging the gap between buyers and agents with
+                            AI-driven insights, role-based auth, and a premium glassmorphism UI powered by Next.js 14.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Role-based auth (NextAuth.js)</li>
+                                <li><i class="fas fa-check"></i> AI-powered property matching</li>
+                                <li><i class="fas fa-check"></i> Glassmorphism Design</li>
+                                <li><i class="fas fa-check"></i> Performance analytics & leads</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card-bottom">
+                        <div class="tech-stack">
+                            <span class="tech-badge nextjs">Next.js</span>
+                            <span class="tech-badge auth">NextAuth.js</span>
+                            <span class="tech-badge prisma">Prisma</span>
+                            <span class="tech-badge sqlite">SQLite</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Itachi210-cmd/HomeConnect-AI" target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - CosmoQuery -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-top">
+                        <div class="project-header">
+                            <h3>CosmoQuery 🌌</h3>
+                            <span class="project-type space-type">Data Dashboard</span>
+                        </div>
+                        <p class="project-desc">
+                            A cinematic space science dashboard for exploring Exoplanets and Black Holes using 30,000+
+                            rows of NASA data, with interactive visualizations and a Deep Space immersive UI.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> 30,000+ NASA exoplanet records with lazy loading</li>
+                                <li><i class="fas fa-check"></i> Habitability calculator & planet comparison</li>
+                                <li><i class="fas fa-check"></i> Black Hole research portal with charts</li>
+                                <li><i class="fas fa-check"></i> Cinematic glassmorphism + particle effects UI</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card-bottom">
+                        <div class="tech-stack">
+                            <span class="tech-badge flask">Flask</span>
+                            <span class="tech-badge pandas">Pandas</span>
+                            <span class="tech-badge vanillajs">Vanilla JS</span>
+                            <span class="tech-badge tailwind">TailwindCSS</span>
+                            <span class="tech-badge nasa">NASA API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Itachi210-cmd/cosmoquery" target="_blank" class="project-link-btn">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Learning</h2>
+            <div class="cert-grid">
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Labeling</h3>
+                    <p class="issuer">Forage</p>
+                    <p class="cert-desc">Virtual Experience Program focused on accuracy and data quality for AI model
+                        training.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fab fa-python"></i></div>
+                    <h3>Programming in Python</h3>
+                    <p class="issuer">ExcelR</p>
+                    <p class="cert-desc">Python fundamentals: variables, data types, loops, functions, and file
+                        handling.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Master DSA</h3>
+                    <p class="issuer">ExcelR</p>
+                    <p class="cert-desc">Core data structures (arrays, linked lists, stacks, queues) and
+                        problem-solving.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Ethical Hacking & Cybersecurity</h3>
+                    <p class="issuer">Udemy</p>
+                    <p class="cert-desc">Network security, vulnerabilities, and penetration testing fundamentals.</p>
+                </div>
+                <div class="cert-card animate-on-scroll">
+                    <div class="cert-icon"><i class="fas fa-infinity"></i></div>
+                    <h3>DevOps Decode</h3>
+                    <p class="issuer">ExcelR</p>
+                    <p class="cert-desc">CI/CD pipelines, version control, automation, and deployment workflows.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <!-- Left: Quick Links -->
+                <div class="contact-info">
+                    <p class="contact-subtitle">I'm currently open for internship and entry-level opportunities. Let's
+                        connect!</p>
+                    <div class="contact-links">
+                        <a href="mailto:katesujal36@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>katesujal36@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank"
+                            class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/Itachi210-cmd" target="_blank" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Profile</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Right: Contact Form -->
+                <form class="contact-form" id="contact-form" action="mailto:katesujal36@gmail.com" method="post"
+                    enctype="text/plain">
+                    <div class="form-group">
+                        <label for="contact-name">Your Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">Your Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5"
+                            placeholder="Hi Sujal, I'd like to connect..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary form-submit-btn">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p class="footer-text">Designed & Built with <span class="heart">❤️</span> by <strong>Sujal Kate</strong>
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/Itachi210-cmd" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:katesujal36@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-copy">&copy; 2026 Sujal Kate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

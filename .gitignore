@@ -1,0 +1,46 @@
+# ================================
+# OS & System Files
+# ================================
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+*.stackdump
+
+# ================================
+# Editor & IDE Files
+# ================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ================================
+# Logs & Temp Files
+# ================================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+~$*
+
+# ================================
+# Environment / Secrets
+# (In case you add backend later)
+# ================================
+.env
+.env.local
+.env.*.local
+
+# ================================
+# Node (if you add npm tools later)
+# ================================
+node_modules/
+package-lock.json
+
+# ================================
+# Build outputs
+# ================================
+/dist/
+/build/

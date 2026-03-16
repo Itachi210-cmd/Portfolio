@@ -3,8 +3,8 @@
 > Personal portfolio website of **Sujal Kate**, an aspiring Web & Application Developer.
 
 ## 🌐 Live Demo
-<!-- Add your GitHub Pages / Vercel link here once deployed -->
-_Coming soon..._
+https://portfolio1-murex-zeta.vercel.app/
+
 
 
 ## 📬 Contact

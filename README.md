@@ -6,30 +6,6 @@
 <!-- Add your GitHub Pages / Vercel link here once deployed -->
 _Coming soon..._
 
-## ✨ Features
-- Fully responsive (Mobile, Tablet, Desktop)
-- Dark mode with glassmorphism design
-- Animated typing effect in hero section
-- Skill progress bars
-- Project cards with GitHub links
-- Contact form
-- Smooth scroll & active nav scrollspy
-- CSS animated background
-
-## 🛠 Built With
-- HTML5
-- CSS3 (Vanilla)
-- JavaScript (Vanilla)
-
-## 📁 Structure
-```
-portfolio/
-├── index.html      # Main page
-├── style.css       # All styles
-├── script.js       # Interactivity
-├── photo.jpeg      # Profile photo
-└── README.md
-```
 
 ## 📬 Contact
 - **Email:** katesujal36@gmail.com

@@ -7,6 +7,14 @@
     <title>Sujal Kate | Web & App Developer</title>
     <meta name="description"
         content="Portfolio of Sujal Kate, an aspiring Web & Application Developer specializing in HTML, CSS, JavaScript, Python, Next.js, and Flutter.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sujal Kate | Web & App Developer">
+    <meta property="og:description" content="Student fresher passionate about building modern web & mobile experiences. Explore my projects and skills.">
+    <meta property="og:image" content="photo.jpeg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -71,7 +79,7 @@
                 <div class="hero-btns">
                     <a href="#projects" class="btn-primary">View Projects</a>
                     <a href="#contact" class="btn-secondary">Hire Me</a>
-                    <a href="#" class="btn-resume" id="download-resume" download>
+                    <a href="Sujal's%20Cv.pdf" class="btn-resume" id="download-resume" download>
                         <i class="fas fa-download"></i> Resume
                     </a>
                 </div>
@@ -91,7 +99,7 @@
             <div class="hero-avatar">
                 <div class="avatar-ring">
                     <div class="avatar-inner">
-                        <img src="photo.jpeg" alt="Sujal Kate" class="avatar-photo"
+                        <img src="photo.jpeg" alt="Sujal Kate" class="avatar-photo" loading="lazy"
                             onerror="this.style.display='none'; document.querySelector('.avatar-initials').style.display='flex';">
                         <span class="avatar-initials" style="display:none;">SK</span>
                     </div>
@@ -104,6 +112,30 @@
                 </div>
                 <div class="floating-badge badge-3">
                     <i class="fab fa-python"></i> Python
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Counter -->
+    <section id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="3">0</span>+
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="5">0</span>+
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="6">0</span>+
+                    <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <span class="stat-number" data-count="2">0</span>+
+                    <span class="stat-label">Years Learning</span>
                 </div>
             </div>
         </div>
@@ -435,6 +467,11 @@
             <p class="footer-copy">&copy; 2026 Sujal Kate. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>

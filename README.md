@@ -3,7 +3,6 @@
 > Personal portfolio website of **Sujal Kate**, an aspiring Web & Application Developer.
 
 ## 🌐 Live Demo
-https://portfolio1-murex-zeta.vercel.app/
 
 
 

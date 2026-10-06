@@ -4,21 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujal Kate | Web & App Developer</title>
+    <title>Sujal Kate | AI Automation & Full Stack Developer</title>
     <meta name="description"
-        content="Portfolio of Sujal Kate, an aspiring Web & Application Developer specializing in HTML, CSS, JavaScript, Python, Next.js, and Flutter.">
+        content="Portfolio of Sujal Kate, AI Automation & Full Stack Developer specializing in Next.js, Flutter, FastAPI, Python, Data Analytics, and Cloud Optimization.">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Sujal Kate | Web & App Developer">
-    <meta property="og:description" content="Student fresher passionate about building modern web & mobile experiences. Explore my projects and skills.">
+    <meta property="og:title" content="Sujal Kate | AI Automation & Full Stack Developer">
+    <meta property="og:description"
+        content="Full Stack & AI Developer passionate about building high-performance web, mobile apps, and data systems. Explore my projects and experience.">
     <meta property="og:image" content="photo.jpeg">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand:wght@300;400;500;600;700&family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,67 +29,67 @@
 
 <body>
 
-    <!-- Animated Background Blobs -->
-    <div class="bg-blobs">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
-    <!-- Dot Grid Background -->
-    <div class="dot-grid"></div>
+    <!-- ===== FIXED 3D BACKGROUND CANVAS ===== -->
+    <canvas id="three-canvas" aria-hidden="true"></canvas>
 
-    <!-- Navigation -->
+    <!-- ===== CLEAN NAVBAR ===== -->
     <header id="header">
         <nav class="navbar">
-            <div class="logo">Sujal<span>.dev</span></div>
+            <a href="#hero" class="logo">
+                <span class="logo-mark">SK</span>
+                <span class="logo-text">Sujal<span>.dev</span></span>
+            </a>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about" class="nav-link" data-section="about">About</a></li>
                 <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
                 <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
                 <li><a href="#certifications" class="nav-link" data-section="certifications">Certifications</a></li>
-                <li><a href="#contact" class="btn-primary nav-contact" id="nav-contact-btn">Contact Me</a></li>
+                <li><a href="#contact" class="btn-primary nav-contact">Get In Touch</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
+            <div class="header-controls">
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!-- Mobile Menu -->
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="menu-overlay" id="menu-overlay" aria-hidden="true"></div>
     <div class="mobile-menu" id="mobile-menu">
-        <span class="close-menu" id="close-menu"><i class="fas fa-times"></i></span>
+        <button class="close-menu" id="close-menu" aria-label="Close menu"><i class="fas fa-times"></i></button>
         <ul class="mobile-nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
-    <!-- Hero Section -->
-    <section id="hero">
+    <!-- ===== HERO SECTION ===== -->
+    <section id="hero" class="zone-section" data-zone="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <p class="greeting">👋 Hello, I'm</p>
+                <p class="greeting"><span class="badge-accent pixel-font">PLAYER 01</span> 👋 Hello, I'm</p>
                 <h1>Sujal Kate</h1>
                 <h2 class="typing-wrapper">
-                    <span class="static-role">I'm a </span>
+                    <span class="static-role">I'm an </span>
                     <span class="typed-text" id="typed-text"></span><span class="cursor-blink">|</span>
                 </h2>
-                <p class="tagline">Building modern web and mobile experiences with passion and precision.</p>
+                <p class="tagline">Building intelligent, scalable full-stack web, mobile, and data solutions with precision and passion.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn-primary">View Projects</a>
                     <a href="#contact" class="btn-secondary">Hire Me</a>
-                    <a href="Sujal's%20Cv.pdf" class="btn-resume" id="download-resume" download>
+                    <a href="Sujal_Kate_CV (1).docx" class="btn-resume" id="download-resume" download="Sujal_Kate_CV.docx">
                         <i class="fas fa-download"></i> Resume
                     </a>
                 </div>
                 <div class="hero-social">
-                    <a href="https://github.com/Itachi210-cmd" target="_blank" aria-label="GitHub">
+                    <a href="https://github.com/Itachi210-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fab fa-linkedin"></i>
                     </a>
                     <a href="mailto:katesujal36@gmail.com" aria-label="Email">
@@ -99,7 +101,7 @@
             <div class="hero-avatar">
                 <div class="avatar-ring">
                     <div class="avatar-inner">
-                        <img src="photo.jpeg" alt="Sujal Kate" class="avatar-photo" loading="lazy"
+                        <img src="photo.jpeg" alt="Sujal Kate" class="avatar-photo"
                             onerror="this.style.display='none'; document.querySelector('.avatar-initials').style.display='flex';">
                         <span class="avatar-initials" style="display:none;">SK</span>
                     </div>
@@ -108,55 +110,92 @@
                     <i class="fab fa-flutter"></i> Flutter
                 </div>
                 <div class="floating-badge badge-2">
-                    <i class="fab fa-react"></i> Next.js
+                    <i class="fab fa-react"></i> Next.js 14
                 </div>
                 <div class="floating-badge badge-3">
-                    <i class="fab fa-python"></i> Python
+                    <i class="fas fa-bolt"></i> FastAPI / Python
                 </div>
             </div>
         </div>
     </section>
 
-
-
-    <!-- About Section -->
-    <section id="about">
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="zone-section" data-zone="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <div class="section-header">
+                <span class="section-tag pixel-font">// BACKSTORY</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
             <div class="about-content animate-on-scroll">
                 <p>
-                    I am a passionate and motivated student fresher looking for internship and entry-level job
-                    opportunities in the tech industry.
-                    With a strong foundation in <span class="highlight">Web & Application Development</span>, I enjoy
-                    turning code into functional, user-friendly digital solutions.
+                    I am an <span class="highlight">AI Automation & Full Stack Developer</span> and Computer Science graduate with hands-on experience in full-stack web and mobile development, backend microservices, data analysis, and AI-integrated applications. Skilled in building interactive user interfaces, analyzing data using Python, Excel, and Power BI, and deploying resilient cloud systems.
                 </p>
                 <p>
-                    My journey involves continuous learning and building real-world projects. From responsive web
-                    designs to cross-platform mobile apps, I strive to write clean, efficient code. I am eager to join a
-                    dynamic team where I can contribute, learn from experienced professionals, and grow as a developer.
+                    My experience covers developing responsive web platforms, cross-platform Flutter applications, and data exploration dashboards with clean, efficient code. I strive to combine analytical rigor with modern design to build impactful digital products that solve real-world problems.
                 </p>
-                <div class="education-card">
-                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                    <p><strong>BSc Computer Science</strong></p>
-                    <p>Shankar Narayan College</p>
-                    <p class="year">3rd Year (Pursuing)</p>
+
+                <!-- Education & Experience Cards Grid -->
+                <div class="about-cards-grid">
+                    <!-- Education 1: M.Sc. CS -->
+                    <div class="info-card glass-card">
+                        <div class="info-card-header">
+                            <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <span class="badge-status pursuing pixel-font">PURSUING</span>
+                        </div>
+                        <h3>Master of Science (M.Sc. CS)</h3>
+                        <p class="institution">Annasaheb Vartak College, Vasai</p>
+                        <span class="card-year">2026 – 2028 (Expected)</span>
+                    </div>
+
+                    <!-- Education 2: B.Sc. CS -->
+                    <div class="info-card glass-card">
+                        <div class="info-card-header">
+                            <div class="info-icon"><i class="fas fa-university"></i></div>
+                            <span class="badge-status completed pixel-font">GRADUATED</span>
+                        </div>
+                        <h3>B.Sc. Computer Science</h3>
+                        <p class="institution">Shankar Narayan College of Arts & Commerce, Mumbai</p>
+                        <div class="edu-meta">
+                            <span class="card-year">2023 – 2026</span>
+                            <span class="cgpa-pill">CGPA: 7.95 / 10</span>
+                        </div>
+                    </div>
+
+                    <!-- Experience: ProdWave -->
+                    <div class="info-card glass-card full-span">
+                        <div class="info-card-header">
+                            <div class="info-icon work-icon"><i class="fas fa-briefcase"></i></div>
+                            <span class="badge-status experience pixel-font">FREELANCE</span>
+                        </div>
+                        <div class="exp-title-row">
+                            <h3>Freelance Full Stack Developer</h3>
+                            <span class="exp-company">ProdWave</span>
+                            <span class="card-year exp-duration">March 2026 – June 2026</span>
+                        </div>
+                        <ul class="exp-highlights">
+                            <li><i class="fas fa-check"></i> Developed responsive web pages and Flutter mobile application screens, implementing authentication and interactive dashboards.</li>
+                            <li><i class="fas fa-check"></i> Identified and resolved performance bugs; collaborated with team using Git for version control and feature deployment.</li>
+                            <li><i class="fas fa-check"></i> Contributed to UI/UX improvements and conducted pre-deployment testing across web and mobile platforms.</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <!-- Stats Counter -->
                 <div class="stats-grid about-stats">
                     <div class="stat-item animate-on-scroll">
-                        <span class="stat-number" data-count="3">0</span>+
+                        <span class="stat-number" data-count="5">0</span><span class="stat-plus">+</span>
                         <span class="stat-label">Projects Built</span>
                     </div>
                     <div class="stat-item animate-on-scroll">
-                        <span class="stat-number" data-count="5">0</span>+
+                        <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
                         <span class="stat-label">Certifications</span>
                     </div>
                     <div class="stat-item animate-on-scroll">
-                        <span class="stat-number" data-count="6">0</span>+
+                        <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
                         <span class="stat-label">Technologies</span>
                     </div>
                     <div class="stat-item animate-on-scroll">
-                        <span class="stat-number" data-count="2">0</span>+
+                        <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
                         <span class="stat-label">Years Learning</span>
                     </div>
                 </div>
@@ -164,18 +203,25 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="zone-section" data-zone="skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <div class="section-header">
+                <span class="section-tag pixel-font">// CHARACTER STATS</span>
+                <h2 class="section-title">My Skills</h2>
+            </div>
             <div class="skills-grid">
-                <div class="skill-category animate-on-scroll">
-                    <h3>Languages & Frameworks</h3>
+                <!-- Development Skills -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="category-header">
+                        <span class="cat-icon"><i class="fas fa-code"></i></span>
+                        <h3>Core Development</h3>
+                    </div>
                     <div class="skill-bars">
                         <div class="skill-bar-item">
                             <div class="skill-bar-label">
-                                <span><i class="fab fa-html5"></i> HTML / CSS</span>
-                                <span class="skill-pct">90%</span>
+                                <span><i class="fab fa-html5"></i> HTML5 / CSS3 / TailwindCSS</span>
+                                <span class="skill-pct pixel-font">90%</span>
                             </div>
                             <div class="skill-bar-track">
                                 <div class="skill-bar-fill" data-width="90"></div>
@@ -183,8 +229,26 @@
                         </div>
                         <div class="skill-bar-item">
                             <div class="skill-bar-label">
-                                <span><i class="fab fa-js"></i> JavaScript</span>
-                                <span class="skill-pct">75%</span>
+                                <span><i class="fab fa-js"></i> JavaScript / TypeScript</span>
+                                <span class="skill-pct pixel-font">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label">
+                                <span><i class="fab fa-react"></i> Next.js 14 / React.js</span>
+                                <span class="skill-pct pixel-font">78%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="78"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label">
+                                <span><i class="fab fa-python"></i> Python & FastAPI</span>
+                                <span class="skill-pct pixel-font">75%</span>
                             </div>
                             <div class="skill-bar-track">
                                 <div class="skill-bar-fill" data-width="75"></div>
@@ -192,74 +256,70 @@
                         </div>
                         <div class="skill-bar-item">
                             <div class="skill-bar-label">
-                                <span><i class="fab fa-python"></i> Python</span>
-                                <span class="skill-pct">70%</span>
+                                <span><i class="fas fa-mobile-alt"></i> Flutter & Dart</span>
+                                <span class="skill-pct pixel-font">70%</span>
                             </div>
                             <div class="skill-bar-track">
                                 <div class="skill-bar-fill" data-width="70"></div>
                             </div>
                         </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-label">
-                                <span><i class="fab fa-react"></i> Next.js</span>
-                                <span class="skill-pct">65%</span>
-                            </div>
-                            <div class="skill-bar-track">
-                                <div class="skill-bar-fill" data-width="65"></div>
-                            </div>
-                        </div>
-                        <div class="skill-bar-item">
-                            <div class="skill-bar-label">
-                                <span><i class="fas fa-mobile-alt"></i> Flutter / Dart</span>
-                                <span class="skill-pct">60%</span>
-                            </div>
-                            <div class="skill-bar-track">
-                                <div class="skill-bar-fill" data-width="60"></div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <div class="skill-category animate-on-scroll">
-                    <h3>Tools & Technologies</h3>
+
+                <!-- Tools & Equipment -->
+                <div class="skill-category glass-card animate-on-scroll">
+                    <div class="category-header">
+                        <span class="cat-icon"><i class="fas fa-database"></i></span>
+                        <h3>Backend, Data & Cloud</h3>
+                    </div>
                     <div class="skill-items">
-                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
-                        <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
-                        <span class="skill-tag"><i class="fas fa-server"></i> REST APIs</span>
-                        <span class="skill-tag"><i class="fas fa-database"></i> SQLite</span>
-                        <span class="skill-tag"><i class="fas fa-cube"></i> Prisma ORM</span>
-                        <span class="skill-tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
-                        <span class="skill-tag"><i class="fas fa-infinity"></i> DevOps</span>
+                        <span class="skill-tag"><i class="fas fa-bolt"></i> FastAPI</span>
+                        <span class="skill-tag"><i class="fas fa-fire"></i> Firebase Firestore</span>
+                        <span class="skill-tag"><i class="fas fa-server"></i> Redis Cache</span>
+                        <span class="skill-tag"><i class="fas fa-layer-group"></i> Prisma ORM</span>
+                        <span class="skill-tag"><i class="fas fa-database"></i> SQLite / Supabase</span>
+                        <span class="skill-tag"><i class="fas fa-chart-bar"></i> Power BI</span>
+                        <span class="skill-tag"><i class="fas fa-file-excel"></i> MS Excel (Advanced)</span>
+                        <span class="skill-tag"><i class="fas fa-table"></i> Pandas</span>
+                        <span class="skill-tag"><i class="fas fa-tags"></i> Data Labeling / AI</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-cloud"></i> Vercel</span>
+                        <span class="skill-tag"><i class="fas fa-network-wired"></i> REST APIs</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="zone-section" data-zone="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <div class="section-header">
+                <span class="section-tag pixel-font">// QUEST LOG</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
             <div class="projects-grid">
 
-                <!-- Project 1 -->
-                <div class="project-card animate-on-scroll">
+                <!-- Project 1: SocietyEase -->
+                <div class="project-card glass-card animate-on-scroll" data-tilt>
+                    <div class="card-top-bar">
+                        <span class="quest-badge pixel-font">QUEST 01</span>
+                        <span class="project-type mobile-type">Mobile App</span>
+                    </div>
                     <div class="project-card-top">
                         <div class="project-header">
                             <h3>SocietyEase</h3>
-                            <span class="project-type mobile-type">Mobile App</span>
                         </div>
                         <p class="project-desc">
-                            A cross-platform society management app designed to simplify communication and daily
-                            operations within residential societies.
+                            A cross-platform housing society management app designed with Firebase to simplify communication, digital notices, and maintenance operations.
                         </p>
                         <div class="project-features">
                             <h4>Key Features</h4>
                             <ul>
-                                <li><i class="fas fa-check"></i> Cross-platform (Android / iOS)</li>
-                                <li><i class="fas fa-check"></i> Society notices & announcements</li>
-                                <li><i class="fas fa-check"></i> Event updates for residents</li>
-                                <li><i class="fas fa-check"></i> Clean, responsive UI</li>
+                                <li><i class="fas fa-check"></i> Cross-platform (Android / iOS) via Flutter</li>
+                                <li><i class="fas fa-check"></i> Real-time complaint tracking via Cloud Firestore</li>
+                                <li><i class="fas fa-check"></i> Digital notice board & maintenance bill updates</li>
+                                <li><i class="fas fa-check"></i> Modern Bento Grid UI with Glassmorphism</li>
                             </ul>
                         </div>
                     </div>
@@ -267,69 +327,77 @@
                         <div class="tech-stack">
                             <span class="tech-badge flutter">Flutter</span>
                             <span class="tech-badge dart">Dart</span>
-                            <span class="tech-badge material">Material Design</span>
+                            <span class="tech-badge firebase">Firebase</span>
+                            <span class="tech-badge firestore">Firestore</span>
                         </div>
                         <div class="project-links">
-                            <span class="project-link-btn no-repo-badge">
-                                <i class="fas fa-lock"></i> Private / No Repo
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card animate-on-scroll">
-                    <div class="project-card-top">
-                        <div class="project-header">
-                            <h3>HomeConnect AI</h3>
-                            <span class="project-type web-type">Web App</span>
-                        </div>
-                        <p class="project-desc">
-                            A full-stack real estate ecosystem bridging the gap between buyers and agents with
-                            AI-driven insights, role-based auth, and a premium glassmorphism UI powered by Next.js 14.
-                        </p>
-                        <div class="project-features">
-                            <h4>Key Features</h4>
-                            <ul>
-                                <li><i class="fas fa-check"></i> Role-based auth (NextAuth.js)</li>
-                                <li><i class="fas fa-check"></i> AI-powered property matching</li>
-                                <li><i class="fas fa-check"></i> Glassmorphism Design</li>
-                                <li><i class="fas fa-check"></i> Performance analytics & leads</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="project-card-bottom">
-                        <div class="tech-stack">
-                            <span class="tech-badge nextjs">Next.js</span>
-                            <span class="tech-badge auth">NextAuth.js</span>
-                            <span class="tech-badge prisma">Prisma</span>
-                            <span class="tech-badge sqlite">SQLite</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Itachi210-cmd/HomeConnect-AI" target="_blank" class="project-link-btn">
-                                <i class="fab fa-github"></i> GitHub
+                            <a href="https://github.com/Itachi210-cmd/SocietyEase" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 - CosmoQuery -->
-                <div class="project-card animate-on-scroll">
+                <!-- Project 2: HomeConnect AI -->
+                <div class="project-card glass-card animate-on-scroll" data-tilt>
+                    <div class="card-top-bar">
+                        <span class="quest-badge pixel-font">QUEST 02</span>
+                        <span class="project-type web-type">Web App</span>
+                    </div>
                     <div class="project-card-top">
                         <div class="project-header">
-                            <h3>CosmoQuery 🌌</h3>
-                            <span class="project-type space-type">Data Dashboard</span>
+                            <h3>HomeConnect AI</h3>
                         </div>
                         <p class="project-desc">
-                            A cinematic space science dashboard for exploring Exoplanets and Black Holes using 30,000+
-                            rows of NASA data, with interactive visualizations and a Deep Space immersive UI.
+                            A full-stack real estate CRM platform with AI-driven property matching, multi-role auth, and lead tracking deployed live on Vercel.
                         </p>
                         <div class="project-features">
                             <h4>Key Features</h4>
                             <ul>
-                                <li><i class="fas fa-check"></i> 30,000+ NASA exoplanet records with lazy loading</li>
-                                <li><i class="fas fa-check"></i> Habitability calculator & planet comparison</li>
-                                <li><i class="fas fa-check"></i> Black Hole research portal with charts</li>
+                                <li><i class="fas fa-check"></i> Multi-role auth (Buyer / Agent / Admin) via NextAuth.js</li>
+                                <li><i class="fas fa-check"></i> AI Match Score Engine for property suitability</li>
+                                <li><i class="fas fa-check"></i> AI-powered description generator for agents</li>
+                                <li><i class="fas fa-check"></i> Glassmorphism UI & map-based search</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card-bottom">
+                        <div class="tech-stack">
+                            <span class="tech-badge nextjs">Next.js 14</span>
+                            <span class="tech-badge auth">NextAuth.js</span>
+                            <span class="tech-badge prisma">Prisma</span>
+                            <span class="tech-badge sqlite">SQLite</span>
+                            <span class="tech-badge vercel">Vercel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Itachi210-cmd/HomeConnect-AI" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: CosmoQuery -->
+                <div class="project-card glass-card animate-on-scroll" data-tilt>
+                    <div class="card-top-bar">
+                        <span class="quest-badge pixel-font">QUEST 03</span>
+                        <span class="project-type space-type">Data Dashboard</span>
+                    </div>
+                    <div class="project-card-top">
+                        <div class="project-header">
+                            <h3>CosmoQuery 🌌</h3>
+                        </div>
+                        <p class="project-desc">
+                            A space science research dashboard for exploring Exoplanets and Black Holes using 30,000+ rows of NASA data with deep space visualization.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> 30,000+ NASA exoplanet records with server chunking</li>
+                                <li><i class="fas fa-check"></i> Habitability calculator & planet comparison tool</li>
+                                <li><i class="fas fa-check"></i> Rigorous data validation & quality checks on NASA data</li>
                                 <li><i class="fas fa-check"></i> Cinematic glassmorphism + particle effects UI</li>
                             </ul>
                         </div>
@@ -337,14 +405,95 @@
                     <div class="project-card-bottom">
                         <div class="tech-stack">
                             <span class="tech-badge flask">Flask</span>
+                            <span class="tech-badge python">Python</span>
                             <span class="tech-badge pandas">Pandas</span>
                             <span class="tech-badge vanillajs">Vanilla JS</span>
-                            <span class="tech-badge tailwind">TailwindCSS</span>
                             <span class="tech-badge nasa">NASA API</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Itachi210-cmd/cosmoquery" target="_blank" class="project-link-btn">
-                                <i class="fab fa-github"></i> GitHub
+                            <a href="https://github.com/Itachi210-cmd/cosmoquery" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Predictive Cloud Costing Engine -->
+                <div class="project-card glass-card animate-on-scroll" data-tilt>
+                    <div class="card-top-bar">
+                        <span class="quest-badge pixel-font">QUEST 04</span>
+                        <span class="project-type cloud-type">Cloud Engine</span>
+                    </div>
+                    <div class="project-card-top">
+                        <div class="project-header">
+                            <h3>Cloud Costing Engine ⚡</h3>
+                        </div>
+                        <p class="project-desc">
+                            A high-performance smart caching engine with dynamic TTL allocation, automatic eviction policies, real-time database cost reduction analytics, and a Next.js telemetry dashboard.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Rule-based smart dynamic TTL scoring based on traffic</li>
+                                <li><i class="fas fa-check"></i> Dual cache: Redis primary + in-memory fallback</li>
+                                <li><i class="fas fa-check"></i> LFU/LRU automated capacity & TTL eviction</li>
+                                <li><i class="fas fa-check"></i> Live cloud cost savings model & 5s telemetry polling</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card-bottom">
+                        <div class="tech-stack">
+                            <span class="tech-badge fastapi">FastAPI</span>
+                            <span class="tech-badge python">Python</span>
+                            <span class="tech-badge redis">Redis</span>
+                            <span class="tech-badge nextjs">Next.js 14</span>
+                            <span class="tech-badge tailwind">TailwindCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Itachi210-cmd/Predictive-Cloud-Costing-Engine" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: DataSense -->
+                <div class="project-card glass-card animate-on-scroll" data-tilt>
+                    <div class="card-top-bar">
+                        <span class="quest-badge pixel-font">QUEST 05</span>
+                        <span class="project-type data-type">Data Platform</span>
+                    </div>
+                    <div class="project-card-top">
+                        <div class="project-header">
+                            <h3>DataSense</h3>
+                        </div>
+                        <p class="project-desc">
+                            A browser-based data analysis and transformation platform that lets users upload CSV/Excel datasets for cleaning, filtering, statistical profiling, pivot table generation, and visualization.
+                        </p>
+                        <div class="project-features">
+                            <h4>Key Features</h4>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Multi-format drag & drop CSV/Excel upload with type inference</li>
+                                <li><i class="fas fa-check"></i> In-memory Pandas processing engine with FastAPI</li>
+                                <li><i class="fas fa-check"></i> Spreadsheet-style interactive grid & column distribution inspector</li>
+                                <li><i class="fas fa-check"></i> Metric cards (duplicates, missing cells, memory) & pivot tables</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-card-bottom">
+                        <div class="tech-stack">
+                            <span class="tech-badge nextjs">Next.js 14</span>
+                            <span class="tech-badge typescript">TypeScript</span>
+                            <span class="tech-badge fastapi">FastAPI</span>
+                            <span class="tech-badge pandas">Pandas</span>
+                            <span class="tech-badge prisma">Prisma ORM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Itachi210-cmd/DataSense" target="_blank"
+                                rel="noopener noreferrer" class="project-link-btn">
+                                <i class="fab fa-github"></i> View Code
                             </a>
                         </div>
                     </div>
@@ -354,107 +503,145 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications">
+    <!-- ===== CERTIFICATIONS SECTION ===== -->
+    <section id="certifications" class="zone-section" data-zone="certifications">
         <div class="container">
-            <h2 class="section-title">Certifications & Learning</h2>
+            <div class="section-header">
+                <span class="section-tag pixel-font">// ACHIEVEMENTS</span>
+                <h2 class="section-title">Certifications & Learning</h2>
+            </div>
             <div class="cert-grid">
-                <div class="cert-card animate-on-scroll">
-                    <div class="cert-icon"><i class="fas fa-database"></i></div>
-                    <h3>Data Labeling</h3>
+                <!-- Cert 1: Power BI & Excel -->
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-card-header">
+                        <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                        <span class="cert-badge pixel-font">UNLOCKED</span>
+                    </div>
+                    <h3>Business Intelligence (Excel & Power BI)</h3>
+                    <p class="issuer">ExcelR</p>
+                    <p class="cert-desc">Advanced data modeling, DAX formulas, interactive dashboards, pivot tables, and business intelligence reporting.</p>
+                </div>
+                <!-- Cert 2: Python -->
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-card-header">
+                        <div class="cert-icon"><i class="fab fa-python"></i></div>
+                        <span class="cert-badge pixel-font">UNLOCKED</span>
+                    </div>
+                    <h3>Foundations of Programming with Python</h3>
+                    <p class="issuer">ExcelR</p>
+                    <p class="cert-desc">Python fundamentals, data structures, OOP principles, file handling, and algorithmic problem-solving.</p>
+                </div>
+                <!-- Cert 3: DSA -->
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-card-header">
+                        <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+                        <span class="cert-badge pixel-font">UNLOCKED</span>
+                    </div>
+                    <h3>Data Structures & Algorithms</h3>
+                    <p class="issuer">ExcelR</p>
+                    <p class="cert-desc">Core data structures (arrays, linked lists, stacks, queues, trees) and algorithmic optimization.</p>
+                </div>
+                <!-- Cert 4: Data Labeling -->
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-card-header">
+                        <div class="cert-icon"><i class="fas fa-tags"></i></div>
+                        <span class="cert-badge pixel-font">UNLOCKED</span>
+                    </div>
+                    <h3>Data Labeling Virtual Experience</h3>
                     <p class="issuer">Forage</p>
-                    <p class="cert-desc">Virtual Experience Program focused on accuracy and data quality for AI model
-                        training.</p>
+                    <p class="cert-desc">Text and image annotation, dataset preparation, and quality validation for AI/ML model training.</p>
                 </div>
-                <div class="cert-card animate-on-scroll">
-                    <div class="cert-icon"><i class="fab fa-python"></i></div>
-                    <h3>Programming in Python</h3>
-                    <p class="issuer">ExcelR</p>
-                    <p class="cert-desc">Python fundamentals: variables, data types, loops, functions, and file
-                        handling.</p>
-                </div>
-                <div class="cert-card animate-on-scroll">
-                    <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Master DSA</h3>
-                    <p class="issuer">ExcelR</p>
-                    <p class="cert-desc">Core data structures (arrays, linked lists, stacks, queues) and
-                        problem-solving.</p>
-                </div>
-                <div class="cert-card animate-on-scroll">
-                    <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
+                <!-- Cert 5: Ethical Hacking -->
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-card-header">
+                        <div class="cert-icon"><i class="fas fa-user-secret"></i></div>
+                        <span class="cert-badge pixel-font">UNLOCKED</span>
+                    </div>
                     <h3>Ethical Hacking & Cybersecurity</h3>
                     <p class="issuer">Udemy</p>
-                    <p class="cert-desc">Network security, vulnerabilities, and penetration testing fundamentals.</p>
+                    <p class="cert-desc">Network security fundamentals, vulnerability scanning, system hardening, and web application security.</p>
                 </div>
-                <div class="cert-card animate-on-scroll">
-                    <div class="cert-icon"><i class="fas fa-infinity"></i></div>
+                <!-- Cert 6: DevOps Decode -->
+                <div class="cert-card glass-card animate-on-scroll">
+                    <div class="cert-card-header">
+                        <div class="cert-icon"><i class="fas fa-infinity"></i></div>
+                        <span class="cert-badge pixel-font">UNLOCKED</span>
+                    </div>
                     <h3>DevOps Decode</h3>
                     <p class="issuer">ExcelR</p>
-                    <p class="cert-desc">CI/CD pipelines, version control, automation, and deployment workflows.</p>
+                    <p class="cert-desc">CI/CD pipelines, version control workflows, automation scripting, and cloud deployment fundamentals.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="zone-section" data-zone="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-tag pixel-font">// CONTACT</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
             <div class="contact-wrapper">
-                <!-- Left: Quick Links -->
-                <div class="contact-info">
-                    <p class="contact-subtitle">I'm currently open for internship and entry-level opportunities. Let's
-                        connect!</p>
+                <div class="contact-info glass-card animate-on-scroll">
+                    <p class="contact-subtitle">
+                        I'm open for full-time roles, internships, and freelance projects in Full Stack Development, AI Automation, and Data Engineering. Let's connect!
+                    </p>
                     <div class="contact-links">
                         <a href="mailto:katesujal36@gmail.com" class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>katesujal36@gmail.com</span>
+                            <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-item-text">
+                                <span class="label">Email</span>
+                                <span>katesujal36@gmail.com</span>
+                            </div>
                         </a>
+                        <a href="tel:+918425949785" class="contact-item">
+                            <div class="contact-icon-box"><i class="fas fa-phone-alt"></i></div>
+                            <div class="contact-item-text">
+                                <span class="label">Phone</span>
+                                <span>+91 8425949785</span>
+                            </div>
+                        </a>
+                        <div class="contact-item static-item">
+                            <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-item-text">
+                                <span class="label">Location</span>
+                                <span>Mira Road, Maharashtra, India</span>
+                            </div>
+                        </div>
                         <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank"
-                            class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <span>LinkedIn Profile</span>
+                            rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon-box"><i class="fab fa-linkedin"></i></div>
+                            <div class="contact-item-text">
+                                <span class="label">LinkedIn</span>
+                                <span>linkedin.com/in/sujal-kate</span>
+                            </div>
                         </a>
-                        <a href="https://github.com/Itachi210-cmd" target="_blank" class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <span>GitHub Profile</span>
+                        <a href="https://github.com/Itachi210-cmd" target="_blank"
+                            rel="noopener noreferrer" class="contact-item">
+                            <div class="contact-icon-box"><i class="fab fa-github"></i></div>
+                            <div class="contact-item-text">
+                                <span class="label">GitHub</span>
+                                <span>github.com/Itachi210-cmd</span>
+                            </div>
                         </a>
                     </div>
                 </div>
-                <!-- Right: Contact Form -->
-                <form class="contact-form" id="contact-form" action="mailto:katesujal36@gmail.com" method="post"
-                    enctype="text/plain">
-                    <div class="form-group">
-                        <label for="contact-name">Your Name</label>
-                        <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-email">Your Email</label>
-                        <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-message">Message</label>
-                        <textarea id="contact-message" name="message" rows="5"
-                            placeholder="Hi Sujal, I'd like to connect..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary form-submit-btn">
-                        <i class="fas fa-paper-plane"></i> Send Message
-                    </button>
-                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===== FOOTER ===== -->
     <footer>
         <div class="container footer-content">
-            <p class="footer-text">Designed & Built with <span class="heart">❤️</span> by <strong>Sujal Kate</strong>
+            <p class="footer-text">
+                Designed & Built with <span class="heart">❤️</span> by <strong>Sujal Kate</strong>
             </p>
             <div class="footer-socials">
-                <a href="https://github.com/Itachi210-cmd" target="_blank" aria-label="GitHub">
+                <a href="https://github.com/Itachi210-cmd" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/sujal-kate-63674b37a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="mailto:katesujal36@gmail.com" aria-label="Email">
@@ -470,6 +657,25 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- GSAP & Lenis CDN Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+
+    <!-- Three.js as ES module -->
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"
+        }
+    }
+    </script>
+    <script type="module">
+        import { initScene, setScrollProgress, setLowGraphics, isWebGLAvailable } from './three-scene.js';
+        window.__THREE_API = { initScene, setScrollProgress, setLowGraphics, isWebGLAvailable };
+    </script>
+
+    <!-- Portfolio Controller -->
     <script src="script.js"></script>
 </body>
 
